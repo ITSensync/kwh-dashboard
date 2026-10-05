@@ -636,7 +636,7 @@ export default function Home() {
           aria-label="Pembacaan meter terbaru"
         >
           <div className="reading-panel">
-            <div className="reading-panel-heading">
+            <div className="reading-panel-heading flex! flex-row!">
               <div>
                 <p className="panel-kicker">Pembacaan terakhir</p>
                 <h2>Saldo token KWH</h2>
