@@ -23,7 +23,7 @@ jobs:
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
             nvm use 20
 
-            cd /var/www/maintenance.getsensync.com
+            cd /var/www/kwh-dashboard.getsensync.com
             git pull origin main
 
             npm install --legacy-peer-deps
