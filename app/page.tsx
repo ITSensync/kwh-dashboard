@@ -599,7 +599,7 @@ export default function Home() {
                 clipRule="evenodd"
               />
             </svg>
-            Keluar
+            <p className="hidden md:flex">Keluar</p>
           </button>
         </div>
       </header>
@@ -660,7 +660,7 @@ export default function Home() {
               </p>
             ) : reading ? (
               <>
-                <p className="reading-value font-extrabold!">
+                <p className="reading-value font-extrabold! tracking-widest!">
                   {formatNumber(reading.tokenKwh, 3)}
                   <span>kWh</span>
                 </p>
