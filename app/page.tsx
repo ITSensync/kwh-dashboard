@@ -660,7 +660,7 @@ export default function Home() {
               </p>
             ) : reading ? (
               <>
-                <p className="reading-value font-extrabold! tracking-widest!">
+                <p className="reading-value font-black! tracking-widest!">
                   {formatNumber(reading.tokenKwh, 3)}
                   <span>kWh</span>
                 </p>
