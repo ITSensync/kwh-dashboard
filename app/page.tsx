@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState, type FormEvent } from "react";
 import { DEVICE_IDS } from "@/lib/energy-config";
 import LoginForm from "@/app/components/LoginForm";
 
-const REFRESH_INTERVAL = 3 * 60 * 1000;
+const REFRESH_INTERVAL = 5 * 60 * 1000;
 
 type KwhReading = {
   id: number;
@@ -618,7 +618,7 @@ export default function Home() {
             </p>
           </div>
           <div className="refresh-info">
-            <span>Data KWH diperbarui otomatis tiap 3 menit</span>
+            <span>Data KWH diperbarui otomatis tiap 5 menit</span>
             {readingUpdatedAt && (
               <span>
                 Terakhir diperbarui{" "}
@@ -891,13 +891,13 @@ export default function Home() {
               <tbody>
                 {topupsLoading ? (
                   <tr>
-                    <td className="table-state" colSpan={3} role="status">
+                    <td className="table-state text-center!" colSpan={3} role="status">
                       Memuat riwayat top up...
                     </td>
                   </tr>
                 ) : topups.length === 0 ? (
                   <tr>
-                    <td className="table-state" colSpan={3}>
+                    <td className="table-state text-center!" colSpan={3}>
                       {topupsError
                         ? "Riwayat belum dapat ditampilkan."
                         : startDate || endDate
@@ -1011,7 +1011,7 @@ export default function Home() {
 
       <footer className="page-footer">
         <span>Perangkat aktif: {deviceId}</span>
-        <span>Interval pembaruan KWH: 3 menit</span>
+        <span>Interval pembaruan KWH: 5 menit</span>
       </footer>
     </div>
   );
